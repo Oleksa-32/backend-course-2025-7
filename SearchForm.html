@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inventory Search</title>
+  </head>
+  <body>
+    <h1>Пошук інвентаря</h1>
+    <form action="/search" method="post">
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id" required />
+
+      <label>
+        <input type="checkbox" id="has_photo" name="has_photo" />
+        Додати посилання на фото в опис
+      </label>
+
+      <button type="submit">Пошук</button>
+    </form>
+  </body>
+</html>

@@ -8,6 +8,9 @@ const fs = require("fs");
 const swaggerUi = require("swagger-ui-express");
 
 // --- CLI (Commander) ---
+// node index.js --host 127.0.0.1 --port 3000 --cache ./cache
+// npx nodemon index.js --host 127.0.0.1 --port 3000 --cache ./cache
+// nodemon index.js --host 127.0.0.1 --port 3000 --cache ./cache
 const program = new Command();
 program
   .requiredOption("-h, --host <host>", "server host")

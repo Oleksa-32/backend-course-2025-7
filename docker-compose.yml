@@ -4,7 +4,7 @@ services:
   app:
     build: .
     container_name: inventory-app
-    command: ["npm", "run", "dev"]      # nodemon inside container
+    command: ["npm", "run", "dev:debug"]      # nodemon inside container
     ports:
       - "${PORT}:${PORT}"               # app port from .env
       - "9229:9229"                     # debug port
